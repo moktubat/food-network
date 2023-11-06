@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+  @apply w-10 h-10 bg-[#e65527] bg-opacity-20 m-2 p-1 rounded-md border-2 border-[#e65527] border-opacity-30;
+}
+
+.default {
+  @apply w-10 h-10 bg-[#101010] bg-opacity-10 m-2 p-1 rounded-md border-2 border-[#101010] border-opacity-20;
+}

@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../../assets/logo.svg";
+import style from "./NavBar.css";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav className="w-full h-16 flex items-center justify-between pl-6 pr-4 sticky z-10">
+    <div>
+      <nav className="w-full h-16 flex items-center justify-between pl-6 pr-4 z-10">
         <Image src={logo} alt="logo"></Image>
 
         <div className="w-96 h-10 flex items-center rounded-lg border-2 border-[#F0F2F4] px-2 py-1">
@@ -150,7 +151,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 };
 

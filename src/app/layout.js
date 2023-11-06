@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './layout/Shared/NavBar/NavBar'
+import SideNavbar from './layout/Shared/SideBar/SideBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,9 @@ export const metadata = {
     <html lang="en">
       <body className={inter.className}>
         <Navbar></Navbar>
+        <SideNavbar>
         {children}
+        </SideNavbar>
       </body>
     </html>
   )
